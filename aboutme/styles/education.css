@@ -1,0 +1,65 @@
+* {
+    /* border: 2px solid blue; */
+    font-family: "Helvetica Narrow", sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    background-color: hotpink;
+    width: 40%;
+}
+h1, h4 {
+    /* width: 80%; */
+    text-align: center;
+    color: white;
+}
+img {
+    width: 30%;
+    display: block;
+    /* border: 4px solid steelblue; */
+    margin: 0 auto;
+}
+p {
+    text-align: center;
+    width: 75%;
+    padding: 10px;
+    margin: 0 auto;
+    color: white;
+}
+ol {
+    width: 60%;
+    padding: 10px;
+    margin: 0 auto;
+}
+.text-center {
+    text-align: center;
+}
+.text-white {
+    color: white;
+}
+.text-black {
+    color: black;
+}
+.text-large {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.text-medium {
+    font-size: 2em;
+    width: 45%;
+}
+.text-small {
+    font-size: .8em;
+    width: 42%;
+    padding: 0;
+}
+.text-tiny {
+    font-size: .7em;
+    width: 50%;
+}
+.text-quote {
+    font-family: "Times New Roman", Times, serif;
+}
+.text-large:hover {
+    color: black;
+}
