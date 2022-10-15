@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fjalla+One&family=Smooch&display=swap');
 * {
     border: 0 solid blue;
 }
@@ -13,7 +14,14 @@ nav a, #hero-msg h1, #hero-msg h4, .button-box, main, section {
     background-color: #0693CD; 
 }
 body {
-    background-color: #0693CD; 
+    background-color: #8b8b8b; 
+    font-family: 'Fjalla One', Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
 }
 header {
     background-color: #086788; 
@@ -21,6 +29,7 @@ header {
 nav a {
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover {
     background-color: #F0C808; 
@@ -29,19 +38,27 @@ nav a:hover {
 }
 .book, .join {
     background-color: #086788; 
-    color: white;
+    color: black;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: #F0C808; 
     color: black;
 }
 .msg {
-    background-color: #086788; 
+    background-color: #0693CD; 
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer {
     background-color: #F0C808; 
     color: black;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a {
     color:#086788;
@@ -58,17 +75,41 @@ footer p a:hover {
     text-decoration: underline;
 }
 .home-title {
-    color: #F0C808;
+    color: navy;
+    font-family: 'Comforter Brush', Schoolbell, cursive;
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4 {
     color: white;
 }
 .msg h2 {
-    color: #F0C808;
+    color: navy;
+    font-family: 'Comforter Brush', Schoolbell, cursive;
 }
 .msg p {
     color: white;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 .logo, .icon {
     width: 80px;
+}
+#logo_link {
+    padding-top: 5px;
+}
+.icon {
+    padding-top: 10px;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #086788;
+}
+main section img {
+    box-sizing: border-box;
 }
