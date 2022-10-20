@@ -216,6 +216,7 @@ main section img {
     .home-title {
         font-size: 25px;
         color: black;
+        text-shadow: none;
     }
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
