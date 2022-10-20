@@ -1,6 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fjalla+One&family=Smooch&display=swap');
-* {
-    border: 0 solid blue;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Permanent+Marker&display=swap');
+:root {
+  --color1: #0693CD;
+  --color2: #086788;
+  --color3: #F0C808;
+  --color4: #403F4C;
+  --color5: #E84855;
+
+  --hfont: 'Permanent Marker', cursive, serif;
+  --pfont: 'Montserrat', Helvetica, sans-serif;
 }
 #content {
     max-width: 1600px;
@@ -11,11 +18,10 @@ nav a, #hero-msg h1, #hero-msg h4, .button-box, main, section {
 }
 #background {
     height: 725px;
-    background-color: #0693CD; 
+    background-color: var(--color1); 
 }
 body {
-    background-color: #8b8b8b; 
-    font-family: 'Fjalla One', Helvetica, sans-serif;
+    font-family: var(--pfont);
     font-size: 22px;
     margin: 0;
     padding: 0;
@@ -24,7 +30,67 @@ h2 {
     margin: 0;
 }
 header {
-    background-color: #086788; 
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: var(--color2); 
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero-box img {
+    width: 100%;
+}
+#hero-msg h4 {
+    color: white;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.camping-card {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+.rapids-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+#background {
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+.mountains {
+    grid-column: 2/7;
+    grid-row: 5/8;
+}
+.msg {
+    grid-column: 6/10;
+    grid-row: 6/7;
+}
+
+.card-img, .mountains {
+    width: 100%;
 }
 nav a {
     color: white;
@@ -32,12 +98,12 @@ nav a {
     padding: 35px;
 }
 nav a:hover {
-    background-color: #F0C808; 
+    background-color: var(--color1); 
     color: black;
     text-decoration: underline;
 }
 .book, .join {
-    background-color: #086788; 
+    background-color: var(--color3); 
     color: black;
     text-decoration: none;
     font-size: 18px;
@@ -46,22 +112,25 @@ nav a:hover {
     border-radius: 5px;
 }
 .book:hover, .join:hover {
-    background-color: #F0C808; 
-    color: black;
+    background-color: var(--color5); 
+    color: white;
 }
 .msg {
-    background-color: #0693CD; 
+    background-color: var(--color2); 
     line-height: 1.5em;
     padding: 35px;
 }
 footer {
-    background-color: #F0C808; 
+    background-color: var(--color1); 
     color: black;
     padding: 25px 50px;
     margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 footer a {
-    color:#086788;
+    color:white;
     text-decoration: none;
 }
 footer a:hover {
@@ -75,17 +144,17 @@ footer p a:hover {
     text-decoration: underline;
 }
 .home-title {
-    color: navy;
-    font-family: 'Comforter Brush', Schoolbell, cursive;
-    font-size: 2em;
+    color: whitesmoke;
+    font-family: var(--hfont);
+    font-size: 3em;
     margin-top: 10px;
 }
 h4 {
     color: white;
 }
 .msg h2 {
-    color: navy;
-    font-family: 'Comforter Brush', Schoolbell, cursive;
+    color: black;
+    font-family: var(--hfont);
 }
 .msg p {
     color: white;
@@ -97,6 +166,8 @@ h4 {
 }
 #logo_link {
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
 .icon {
     padding-top: 10px;
@@ -108,8 +179,58 @@ footer .social img {
     margin: 200px 0;
 }
 .card-img {
-    border: 10px solid #086788;
+    border: 10px solid var(--color2);
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px gray;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
 }
 main section img {
     box-sizing: border-box;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: black;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
