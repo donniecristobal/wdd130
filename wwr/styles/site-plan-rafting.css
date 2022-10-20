@@ -21,10 +21,10 @@ Fonts are separated by a & */
   --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --nav-link-color: white;
+  --nav-background-color: #086788;
+  --nav-hover-link-color: black;
+  --nav-hover-background-color: #0693CD;
 }
 
 
@@ -123,6 +123,7 @@ nav a:link, nav a:visited {
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+  text-decoration: underline;
 }
 .sitemap {
     display: grid;
