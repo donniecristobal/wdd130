@@ -5,9 +5,6 @@
   --color3: #F0C808;
   --color4: #403F4C;
   --color5: #E84855;
-
-  --hfont: 'Permanent Marker', cursive, serif;
-  --pfont: 'Montserrat', Helvetica, sans-serif;
 }
 #content {
     max-width: 1600px;
@@ -21,7 +18,7 @@ nav a, #hero-msg h1, #hero-msg h4, .button-box, main, section {
     background-color: var(--color1); 
 }
 body {
-    font-family: var(--pfont);
+    font-family: 'Montserrat', Helvetica, sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
@@ -145,7 +142,7 @@ footer p a:hover {
 }
 .home-title {
     color: whitesmoke;
-    font-family: var(--hfont);
+    font-family: 'Permanent Marker', cursive, serif;
     font-size: 3em;
     margin-top: 10px;
 }
@@ -154,7 +151,7 @@ h4 {
 }
 .msg h2 {
     color: black;
-    font-family: var(--hfont);
+    font-family: 'Permanent Marker', cursive, serif;
 }
 .msg p {
     color: white;
